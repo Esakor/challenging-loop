@@ -1,0 +1,14 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="MDt|9$ZR5yZ|Xtq^1d!t">index</variable><variable id="K?FHPJ*hc^[_pGbvg1x3">product</variable></variables><comment id="YxYlD?=-6xK?~$2m;?~=" x="853" y="150" h="592" w="526">note for buttne A
+
+1*2*3*4     index0 1 2 3 4
+
+
+product = 1 
+product(new)=product(old)*2 = 1*2
+product(new)=product(old)*3 = 1*2*3
+product(new)=product(old)*4 = 1*2*3*4
+
+index = 0 product = 1(product) *(0(index)+1)=1
+index = 2 product = product*(index+1)
+index = 0 product = product*(index+1)
+index = 0 product = product*(index+1)</comment><block type="pxt-on-start" id="o33+(`1Ie1ips6g|rB,1" x="20" y="20"><statement name="HANDLER"><block type="variables_set" id="%dc:?/%`hqZ*h[F`5,Be"><field name="VAR" id="K?FHPJ*hc^[_pGbvg1x3">product</field><value name="VALUE"><shadow type="math_number" id="eGV6rl,hwsIkW}.O=5M9"><field name="NUM">1</field></shadow></value></block></statement></block><block type="device_button_event" id="3f9a@oq(jOqul2O1YZ|q" x="47" y="232"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="pxt_controls_for" id="};Vdj/T)2rbdANTtSvlR"><value name="VAR"><shadow type="variables_get_reporter" id="]s*I+v#La$iPdvN?:K{7"><field name="VAR" id="MDt|9$ZR5yZ|Xtq^1d!t">index</field></shadow></value><value name="TO"><shadow type="math_whole_number" id="Nx@Hk1[6G;=(bWl{S#.^"><field name="NUM">3</field></shadow></value><statement name="DO"><block type="variables_set" id="OKTLyLPuf%6fJ9#mnM%{"><field name="VAR" id="K?FHPJ*hc^[_pGbvg1x3">product</field><value name="VALUE"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="math_arithmetic" id="0KXqA/b7|*`9n57+5%8J"><field name="OP">MULTIPLY</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="+1|{qz/Bbq73/NPG{v6S"><field name="VAR" id="K?FHPJ*hc^[_pGbvg1x3">product</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_arithmetic" id="Fc.MPhfae31os/A(=.pN"><field name="OP">ADD</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="O.LZ/fP._6Sdl$$}SCHH"><field name="VAR" id="MDt|9$ZR5yZ|Xtq^1d!t">index</field></block></value><value name="B"><shadow type="math_number" id="5=fy!$Zj;jYe[og9jUxL"><field name="NUM">1</field></shadow></value></block></value></block></value></block></statement><next><block type="device_show_number" id="3;.X`XmSrB(fKyZ=VdoH"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="T}77)D4XSum{q:Jib}Gr"><field name="VAR" id="K?FHPJ*hc^[_pGbvg1x3">product</field></block></value></block></next></block></statement></block></xml>
